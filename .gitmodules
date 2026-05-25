@@ -3,4 +3,4 @@
 	url = https://github.com/quanttide/qtcloud-code.git
 [submodule "examples/default"]
 	path = examples/default
-	url = https://github.com/quanttide/quanttide-example-of-software-engineering.git
+	url = https://github.com/quanttide/quanttide-laboratory-of-software-engineering.git
