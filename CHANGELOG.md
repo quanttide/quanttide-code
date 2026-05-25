@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.1.1 (2026-05-25)
+
+### 仓库维护
+
+- 新建子模块 `docs/report` — `quanttide-report-of-software-engineering`
+- `examples/default` 同步远程最新变更
+- `apps/qtcloud-code` 子模块 Cargo.toml repository URL 修复为 `qtcloud-code.git`
+- `qtcloud-devops` 更新至 v0.4.3
+
+---
+
 ## v0.1.0 (2026-05-25)
 
 ### 项目初始化
@@ -24,12 +35,3 @@
 - `apps/qtcloud-code` 子模块 deinit（防止误操作）
 - `examples/default` 远程仓库重命名为 `quanttide-laboratory-of-software-engineering`
 - 首次正式发布 (`v0.1.0`)
-
-## v0.1.1 (2026-05-25)
-
-### 仓库维护
-
-- 新建子模块 `docs/report` — `quanttide-report-of-software-engineering`
-- `examples/default` 同步远程最新变更
-- `apps/qtcloud-code` 子模块 Cargo.toml repository URL 修复为 `qtcloud-code.git`
-- `qtcloud-devops` 更新至 v0.4.3
