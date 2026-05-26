@@ -1,0 +1,134 @@
+name: qtcloud-code-cli
+description: "多语言代码静态分析与质量检测 CLI"
+version: 0.1.0
+status: active
+
+users:
+  - role: 个人开发者
+    description: 独立开发，一人维护项目
+    usage: 本地 review 自查，提交前扫一遍
+  - role: 团队 / CI
+    description: 多人协作，需统一质量门槛
+    usage: CI pipeline 集成，--status 写报告，contract 共享配置
+
+scenarios:
+  - name: 提交前自查
+    action: qtcloud-code review src/
+    outcome: 扫新增代码，输出过长函数/unsafe 块等问题列表
+
+  - name: CI 门禁
+    action: qtcloud-code review . --status
+    outcome: 扫描全项目，写入 STATUS.md，失败退出码非 0
+
+  - name: 项目初始化质量基线
+    action: qtcloud-code contract init && contract validate
+    outcome: 生成 .quanttide/code/contract.yaml，团队统一规则配置
+
+  - name: 代码审查辅助
+    action: qtcloud-code review --rules long-function
+    outcome: 仅输出指定规则结果，辅助 Code Review 聚焦
+
+  - name: 遗留代码清理
+    action: qtcloud-code review . --format json
+    outcome: JSON 输出，对接自定义脚本或可视化面板
+
+  - name: 批量重命名
+    action: qtcloud-code refactor rename --old-name old --new-name new
+    outcome: 符号表分析，安全重命名（dry-run 预览后写文件）
+
+  - name: 多项目管理
+    action: 不同项目配置不同 contract.yaml
+    outcome: 每个项目独立阈值（如 Rust 项目 30/50/80，JS 项目 20/40/60）
+
+needs:
+  - "代码质量从靠人盯变成可测量、可复现、可自动化"
+
+requirements:
+  - need: 客观标准
+    problem: Code Review 靠 reviewer 经验判断太长
+    solution: 三级阈值 MUST/SHOULD/MAY，不依赖主观判断
+
+  - need: 可复现
+    problem: 同一个项目两次 review 结果不同
+    solution: 纯规则引擎 + tree-sitter AST，相同代码相同结果
+
+  - need: 无侵入
+    problem: 不想改项目现有工具链
+    solution: review 只读不写，--status 输出到单独文件
+
+  - need: 可配置
+    problem: 不同团队对长函数标准不同
+    solution: contract.yaml 按项目配置阈值和启用规则
+
+  - need: 增量适用
+    problem: 旧项目到处都是问题，无法一次性修完
+    solution: 三级阈值 —— MAY 可忽略，SHOULD 建议，MUST 阻塞
+
+  - need: 便宜
+    problem: 不想为代码质量工具付费或架设 LLM
+    solution: 纯规则引擎，零外部依赖，cargo install 即用
+
+capabilities:
+  cli:
+    review:
+      description: 检测入口
+      options:
+        - path: 目标目录
+        - --format json: 输出格式
+        - --rules: 指定规则子集
+        - --status: 写入 STATUS.md
+    contract:
+      description: 配置管理
+      subcommands:
+        - init: 生成默认配置
+        - list: 列出规则
+        - validate: 校验配置
+    refactor:
+      description: 代码变换（预览）
+      subcommands:
+        - rename: 符号重命名（dry-run + 写文件）
+
+  rules:
+    - id: long-function
+      detection: tree-sitter 函数体 AST 节点行数
+      thresholds: [30, 50, 80]
+    - id: long-parameter-list
+      detection: tree-sitter 参数节点计数
+      thresholds: [4, 6, 9]
+    - id: rust-wide-unsafe
+      detection: tree-sitter 语句计数
+      thresholds: [3, 5, 8]
+    - id: unused-variable
+      detection: cargo check 编译输出
+      threshold: SHOULD
+    - id: missing-tests
+      detection: 源文件到测试文件映射
+      threshold: MUST
+
+  languages:
+    - name: Rust
+      parser: tree-sitter-rust
+      ext: .rs
+      coverage: 全部规则
+    - name: Python
+      parser: tree-sitter-python
+      ext: .py
+      coverage: 通用规则
+    - name: Go
+      parser: tree-sitter-go
+      ext: .go
+      coverage: 通用规则
+    - name: Dart
+      parser: tree-sitter-dart
+      ext: .dart
+      coverage: 通用规则
+    - name: TypeScript
+      parser: tree-sitter-typescript
+      ext: [.ts, .tsx]
+      coverage: 通用规则
+
+out_of_scope:
+  - 不做自动修复（只检测，不修改，refactor rename 只是预览版）
+  - 不做语义级分析（类型推断、数据流分析）
+  - 不依赖 LLM 或外部 API
+  - 不做 CI/CD 编排（只输出 JSON/STATUS.md，由上游 CI 决策）
