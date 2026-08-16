@@ -4,12 +4,6 @@
 [submodule "examples/default"]
 	path = examples/default
 	url = https://github.com/quanttide/quanttide-laboratory-of-software-engineering.git
-[submodule "apps/qtcloud-devops"]
-	path = apps/qtcloud-devops
-	url = https://github.com/quanttide/qtcloud-devops.git
-[submodule "examples/innov"]
-	path = examples/innov
-	url = https://github.com/quanttide/quanttide-laboratory-of-innovation.git
 [submodule "data/report"]
 	path = data/report
 	url = https://github.com/quanttide/quanttide-report-of-software-engineering.git
