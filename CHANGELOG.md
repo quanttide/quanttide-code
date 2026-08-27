@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [Unreleased]
+
+### 新增
+
+- 注册子模块：`docs/handbook`（软件工程工作手册，quanttide-handbook-of-software-engineering）
+- README.md：新增子模块一览表
+
 ## [0.1.1] - 2026-05-25
 
 ### 仓库维护
