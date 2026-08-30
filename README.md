@@ -24,6 +24,7 @@ quanttide-code 是量潮知识管理体系中的软件工程模块，专注代�
 | `examples/default` | 软件工程实验室 (git submodule → quanttide-laboratory-of-software-engineering) |
 | `data/context` | 软件工程语境 (git submodule → quanttide-context-of-software-engineering) |
 | `data/journal` | 软件工程日志 (git submodule → quanttide-journal-of-software-engineering) |
+| `data/profile` | 软件工程档案 (git submodule → quanttide-profile-of-software-engineering) |
 | `data/report` | 软件工程报告 (git submodule → quanttide-report-of-software-engineering) |
 | `docs/handbook` | 软件工程工作手册 (git submodule → quanttide-handbook-of-software-engineering) |
 
