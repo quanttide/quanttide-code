@@ -6,6 +6,7 @@
 
 - 注册子模块：`docs/handbook`（软件工程工作手册，quanttide-handbook-of-software-engineering）
 - 注册子模块：`data/profile`（软件工程档案，quanttide-profile-of-software-engineering）
+- 注册子模块：`docs/bylaw`（软件工程章程，quanttide-bylaw-of-software-engineering）
 - README.md：新增子模块一览表
 
 ## [0.1.1] - 2026-05-25
