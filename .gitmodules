@@ -22,3 +22,42 @@
 [submodule "docs/bylaw"]
 	path = docs/bylaw
 	url = https://github.com/quanttide/quanttide-bylaw-of-software-engineering.git
+[submodule "apps/qtcode"]
+	path = apps/qtcode
+	url = https://github.com/quanttide/qtcode.git
+[submodule "packages/quanttide-code-toolkit"]
+	path = packages/quanttide-code-toolkit
+	url = https://github.com/quanttide/quanttide-code-toolkit.git
+[submodule "data/intention"]
+	path = data/intention
+	url = https://github.com/quanttide/quanttide-intention-of-software-engineering.git
+[submodule "data/roadmap"]
+	path = data/roadmap
+	url = https://github.com/quanttide/quanttide-roadmap-of-software-engineering.git
+[submodule "data/insight"]
+	path = data/insight
+	url = https://github.com/quanttide/quanttide-insight-of-software-engineering.git
+[submodule "data/brochure"]
+	path = data/brochure
+	url = https://github.com/quanttide/quanttide-brochure-of-software-engineering.git
+[submodule "data/library"]
+	path = data/library
+	url = https://github.com/quanttide/quanttide-library-of-software-engineering.git
+[submodule "data/history"]
+	path = data/history
+	url = https://github.com/quanttide/quanttide-history-of-software-engineering.git
+[submodule "data/archive"]
+	path = data/archive
+	url = https://github.com/quanttide/quanttide-archive-of-software-engineering.git
+[submodule "docs/specification"]
+	path = docs/specification
+	url = https://github.com/quanttide/quanttide-specification-of-software-engineering.git
+[submodule "docs/tutorial"]
+	path = docs/tutorial
+	url = https://github.com/quanttide/quanttide-tutorial-of-software-engineering.git
+[submodule "docs/essay"]
+	path = docs/essay
+	url = https://github.com/quanttide/quanttide-essay-of-software-engineering.git
+[submodule "docs/gallery"]
+	path = docs/gallery
+	url = https://github.com/quanttide/quanttide-gallery-of-software-engineering.git
