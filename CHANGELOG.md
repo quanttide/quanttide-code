@@ -7,6 +7,19 @@
 - 注册子模块：`docs/handbook`（软件工程工作手册，quanttide-handbook-of-software-engineering）
 - 注册子模块：`data/profile`（软件工程档案，quanttide-profile-of-software-engineering）
 - 注册子模块：`docs/bylaw`（软件工程章程，quanttide-bylaw-of-software-engineering）
+- 注册子模块：`apps/qtcode`（量潮代码中心，qtcode）
+- 注册子模块：`packages/quanttide-code-toolkit`（软件工程工具箱，quanttide-code-toolkit）
+- 注册子模块：`data/intention`（软件工程意图，quanttide-intention-of-software-engineering）
+- 注册子模块：`data/roadmap`（软件工程路线图，quanttide-roadmap-of-software-engineering）
+- 注册子模块：`data/insight`（软件工程洞察，quanttide-insight-of-software-engineering）
+- 注册子模块：`data/brochure`（软件工程宣传册，quanttide-brochure-of-software-engineering）
+- 注册子模块：`data/library`（软件工程参考，quanttide-library-of-software-engineering）
+- 注册子模块：`data/history`（软件工程历史，quanttide-history-of-software-engineering）
+- 注册子模块：`data/archive`（软件工程归档，quanttide-archive-of-software-engineering）
+- 注册子模块：`docs/specification`（软件工程标准，quanttide-specification-of-software-engineering）
+- 注册子模块：`docs/tutorial`（软件工程教程，quanttide-tutorial-of-software-engineering）
+- 注册子模块：`docs/essay`（软件工程札记，quanttide-essay-of-software-engineering）
+- 注册子模块：`docs/gallery`（软件工程案例集，quanttide-gallery-of-software-engineering）
 - README.md：新增子模块一览表
 
 ## [0.1.1] - 2026-05-25
