@@ -44,4 +44,6 @@ quanttide-code 是量潮知识管理体系中的软件工程模块，专注代�
 
 ## 相关链接
 
+- [贡献指南](./CONTRIBUTING.md)
+- [Agent 工作指南](./AGENTS.md)
 - [quanttide 官网](https://quanttide.com)
