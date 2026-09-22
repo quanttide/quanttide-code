@@ -21,6 +21,8 @@
 - 注册子模块：`docs/essay`（软件工程札记，quanttide-essay-of-software-engineering）
 - 注册子模块：`docs/gallery`（软件工程案例集，quanttide-gallery-of-software-engineering）
 - README.md：新增子模块一览表
+- CONTRIBUTING.md：新增贡献指南，说明子模块流程与提交约定
+- AGENTS.md：新增 Agent 工作指南
 
 ## [0.1.1] - 2026-05-25
 
