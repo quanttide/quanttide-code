@@ -61,3 +61,9 @@
 [submodule "docs/gallery"]
 	path = docs/gallery
 	url = https://github.com/quanttide/quanttide-gallery-of-software-engineering.git
+[submodule "packages/quanttide-audit-toolkit"]
+	path = packages/quanttide-audit-toolkit
+	url = https://github.com/quanttide/quanttide-audit-toolkit.git
+[submodule "packages/quanttide-agent-toolkit"]
+	path = packages/quanttide-agent-toolkit
+	url = https://github.com/quanttide/quanttide-agent-toolkit.git

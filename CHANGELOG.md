@@ -9,6 +9,8 @@
 - 注册子模块：`docs/bylaw`（软件工程章程，quanttide-bylaw-of-software-engineering）
 - 注册子模块：`apps/qtcode`（量潮代码中心，qtcode）
 - 注册子模块：`packages/quanttide-code-toolkit`（软件工程工具箱，quanttide-code-toolkit）
+- 注册子模块：`packages/quanttide-audit-toolkit`（审计工具箱，quanttide-audit-toolkit）
+- 注册子模块：`packages/quanttide-agent-toolkit`（Agent 工具箱，quanttide-agent-toolkit）
 - 注册子模块：`data/intention`（软件工程意图，quanttide-intention-of-software-engineering）
 - 注册子模块：`data/roadmap`（软件工程路线图，quanttide-roadmap-of-software-engineering）
 - 注册子模块：`data/insight`（软件工程洞察，quanttide-insight-of-software-engineering）
