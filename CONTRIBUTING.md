@@ -8,7 +8,7 @@
 
 - `apps/`：可运行的产品与站点，如 `apps/qtcloud-code`、`apps/qtcode`；
 - `packages/`：可复用的库与工具，如 `packages/quanttide-code-toolkit`；
-- `examples/`：示例与实验室，如 `examples/default`；
+- `examples/`：示例与实验室，如 `examples/quanttide-code-lab`；
 - `data/`：记录性材料，如语境、日志、档案、报告、意图、路线图、洞察；
 - `docs/`：规范性文档，如章程、工作手册、标准、教程、札记、案例集。
 
