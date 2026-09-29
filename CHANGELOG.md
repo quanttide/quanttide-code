@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### 变更
+
+- 实验室子模块改名：`examples/default` → `examples/quanttide-code-lab`（仓 quanttide-laboratory-of-software-engineering → quanttide-code-lab）
+
+
 ### 新增
 
 - 注册子模块：`docs/handbook`（软件工程工作手册，quanttide-handbook-of-software-engineering）

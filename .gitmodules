@@ -1,9 +1,9 @@
 [submodule "apps/qtcloud-code"]
 	path = apps/qtcloud-code
 	url = https://github.com/quanttide/qtcloud-code.git
-[submodule "examples/default"]
-	path = examples/default
-	url = https://github.com/quanttide/quanttide-laboratory-of-software-engineering.git
+[submodule "examples/quanttide-code-lab"]
+	path = examples/quanttide-code-lab
+	url = https://github.com/quanttide/quanttide-code-lab.git
 [submodule "data/report"]
 	path = data/report
 	url = https://github.com/quanttide/quanttide-report-of-software-engineering.git
