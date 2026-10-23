@@ -22,9 +22,9 @@ quanttide-code 是量潮知识管理体系中的软件工程模块，专注代�
 |------|------|
 | `apps/qtcloud-code` | 软件工程云 (git submodule → qtcloud-code) |
 | `apps/qtcode` | 量潮代码中心，工程档案公开展示 (git submodule → qtcode) |
-| `packages/quanttide-code-toolkit` | 软件工程工具箱 (git submodule) |
-| `packages/quanttide-audit-toolkit` | 审计工具箱 (git submodule) |
-| `packages/quanttide-agent-toolkit` | Agent 工具箱 (git submodule) |
+| `packages/quanttide-code-toolkit` | 软件工程标准库 (git submodule) |
+| `packages/quanttide-audit-toolkit` | 审计标准库 (git submodule) |
+| `packages/quanttide-agent-toolkit` | Agent 标准库 (git submodule) |
 | `examples/quanttide-code-lab` | 软件工程实验室 (git submodule → quanttide-code-lab) |
 | `data/context` | 软件工程语境 (git submodule → quanttide-context-of-software-engineering) |
 | `data/journal` | 软件工程日志 (git submodule → quanttide-journal-of-software-engineering) |
