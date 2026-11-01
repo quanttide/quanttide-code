@@ -4,6 +4,7 @@
 
 ### 变更
 
+- `apps/qtcloud-meta`（量潮元数据 CLI）自元工程领域迁入：命令 `category` 改名 `paradigm`，「范畴」改「范式」，表改文件优先装载（快照保底），停机位指到填表文件，版本 0.1.0-alpha.2
 - 四阶段工作流（需求、意图、规格、实现）自元工程领域迁入：`docs/specification` 新增定义 `intro/layer.md`，`docs/handbook` 新增工作手册 `intro/layer/index.md`，`docs/tutorial` 新增教程 `intro/layer.md` 并登记进目录，`docs/bylaw` 新增章程 `index.md` 第一章工作流程；形式化建模正课六篇迁入 `docs/tutorial` `formalization/`
 - 实验室子模块改名：`examples/default` → `examples/quanttide-code-lab`（仓 quanttide-laboratory-of-software-engineering → quanttide-code-lab）
 
